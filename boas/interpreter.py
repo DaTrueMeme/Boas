@@ -27,6 +27,8 @@ class BoasInterpreter:
         self.functions = {}
         self.temp_variables = []
 
+        print("test")
+
     def checkSyntax(self, correct_string, given_string, data, message):
         if correct_string != given_string:
             self.throwError(message, data["file_path"], data["code"], "SyntaxError")

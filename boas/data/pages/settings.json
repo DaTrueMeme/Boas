@@ -1,0 +1,44 @@
+{
+    "title": "Settings",
+
+    "content": [
+        {
+            "type": "toggle",
+            "label": "Use Emojis",
+
+            "states":[
+                true,
+                false
+            ],
+
+            "change": "use_emojis",
+
+            "actions": [
+                "self.setSetting('use_emojis', value)"
+            ]
+        },
+        {
+            "type": "toggle",
+            "label": "Arrow Selection",
+
+            "states": [
+                true,
+                false
+            ],
+
+            "change": "arrow_selection",
+
+            "actions": [
+                "self.setSetting('arrow_selection', value)"
+            ]
+        },
+        {
+            "type": "button",
+            "label": "Back",
+
+            "actions": [
+                "self.switchPage(self.last_page)"
+            ]
+        }
+    ]
+}

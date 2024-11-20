@@ -1,0 +1,8 @@
+{
+    "console": ["send", "clear"],
+    "var": [],
+    "func": [],
+    "call": [],
+    "import": [],
+    "if": []
+}

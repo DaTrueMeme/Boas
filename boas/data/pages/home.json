@@ -1,0 +1,30 @@
+{
+    "title": "Home",
+
+    "content": [
+        {
+            "type": "button",
+            "label": "Settings",
+
+            "actions": [
+                "self.switchPage('settings')"
+            ]
+        },
+        {
+            "type": "button",
+            "label": "Update",
+
+            "actions": [
+                "update()"
+            ]
+        },
+        {
+            "type": "button",
+            "label": "Exit",
+
+            "actions": [
+                "self.exit()"
+            ]
+        }
+    ]
+}

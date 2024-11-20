@@ -1,0 +1,12 @@
+{
+    "text": {
+        "INFO": "INFO:",
+        "ERROR": "ERROR:",
+        "CODE": "CODE:"
+    },
+    "emojis":{
+        "INFO": "✉️",
+        "ERROR": "💀",
+        "CODE": "📃"
+    }
+}

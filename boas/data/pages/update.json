@@ -7,7 +7,7 @@
             "label": "Update Now",
 
             "actions": [
-                "self.update()"
+                "update()"
             ]
         },
         {

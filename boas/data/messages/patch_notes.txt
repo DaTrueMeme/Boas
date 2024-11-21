@@ -1,0 +1,5 @@
+Imported Functions Arguments Update
+          Version 0.0.2
+
+--- Interpreter Updates ---
+• Imported functions now have the ability to have arguments

@@ -6,4 +6,4 @@
 ╚═════╝  ╚════╝ ╚═╝  ╚═╝╚═════╝ 
 
 Hello Boas User!
-Running Boas 0.0.1
+Running Boas 0.0.2

@@ -27,8 +27,6 @@ class BoasInterpreter:
         self.functions = {}
         self.temp_variables = []
 
-        print("test")
-
     def checkSyntax(self, correct_string, given_string, data, message):
         if correct_string != given_string:
             self.throwError(message, data["file_path"], data["code"], "SyntaxError")
@@ -193,14 +191,21 @@ class BoasInterpreter:
 
             with open(f'{file_path}.boas', 'r') as f:
                 add = False
-                function = [[]]
+                function = []
                 for line in f:
                     if add:
                         if line[0:self.tab_spaces] != " " * self.tab_spaces:
                             break
                         function.append(line[self.tab_spaces:].removesuffix("\n"))
 
-                    if line == f'func.{func_name}():\n':
+                    if line[0:len(func_name) + 5] == f'func.{func_name}':
+                        func_args = line[len(func_name) + 6:-3].split(", ")
+
+                        if func_args[0] == '':
+                            func_args.remove('')
+
+                        function.append(func_args)
+
                         add = True
 
                 if not add:

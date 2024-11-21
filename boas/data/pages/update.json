@@ -1,29 +1,29 @@
 {
-    "title": "Home",
+    "title": "Update",
 
     "content": [
         {
             "type": "button",
-            "label": "Settings",
+            "label": "Update Now",
 
             "actions": [
-                "self.switchPage('settings')"
+                "self.update()"
             ]
         },
         {
             "type": "button",
-            "label": "Update",
+            "label": "Patch Notes",
 
             "actions": [
-                "self.switchPage('update')"
+                "self.renderMessage('patch_notes')"
             ]
         },
         {
             "type": "button",
-            "label": "Exit",
+            "label": "Back",
 
             "actions": [
-                "self.exit()"
+                "self.switchPage(self.last_page)"
             ]
         }
     ]

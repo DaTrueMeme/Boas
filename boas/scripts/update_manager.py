@@ -42,6 +42,6 @@ def update(folder_name="boas"):
     except Exception as e:
         print(f"An error occurred while deleting the old folder: {e}")
 
-    os.rename(temp_folder_name, folder_name)
+    os.rename(temp_folder_name, f'{folder_name}_')
 
     print("Boas update successfully installed!\nRestart to use it.")
